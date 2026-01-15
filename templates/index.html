@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Detection</title>
+</head>
+<body>
+    <h2>Emotion Detection from Text</h2>
+    <form method="POST">
+        <textarea name="text" rows="4" cols="50" placeholder="Enter text here..."></textarea><br><br>
+        <button type="submit">Detect Emotion</button>
+    </form>
+
+    {% if emotion %}
+        <h3>Emotion: {{ emotion }}</h3>
+        <p>Confidence: {{ score }}%</p>
+    {% endif %}
+</body>
+</html>
